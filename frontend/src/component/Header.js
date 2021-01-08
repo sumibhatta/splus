@@ -1,16 +1,30 @@
 import React from 'react'
 import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap'
+import {LinkContainer} from 'react-router-bootstrap'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
     return (
         <header className="col-12">
             <br/>
   <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Stationery Plus</Navbar.Brand>
+    <LinkContainer to="/">
+    <Navbar.Brand>Stationery Plus</Navbar.Brand>
+    </LinkContainer>
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Products</Nav.Link>
-      <Nav.Link href="#pricing">Contact Us</Nav.Link>
+
+    <LinkContainer to="/">
+      <Nav.Link>Home</Nav.Link>
+    </LinkContainer>
+
+    <LinkContainer to="/pro">
+      <Nav.Link>Products</Nav.Link>
+    </LinkContainer>
+
+    <LinkContainer to="/contact">
+      <Nav.Link>Contact Us</Nav.Link>
+    </LinkContainer>
+
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />

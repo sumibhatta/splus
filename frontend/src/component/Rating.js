@@ -1,5 +1,5 @@
 import React from 'react'
-import { propTypes } from 'react-bootstrap/esm/Image'
+//import { propTypes } from 'react-bootstrap/esm/Image'
 //Upgrade needed to font awesome 5 cuz. its 4
 const Rating = ({value, from, color}) => {
     return (

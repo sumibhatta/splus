@@ -2,7 +2,7 @@ const products = [{
         _id: '1',
         name: 'X1 Pencil',
         image: '/images/X1.jpeg',
-        description: '',
+        description: "It is the very cool pencil. I am just testing it in computer but I already like it. It is my favourite kind of pecil. And I don't know what I am writing but it is just to test if I can fit this content in the web. Thank you",
         brand: 'DOMS',
         category: 'Pencil',
         price: 80.00,
