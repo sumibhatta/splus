@@ -1,12 +1,21 @@
 import React from 'react'
+import Header from './component/Header'
+import Footer from './component/Footer'
+import HomeScreen from './screens/HomeScreen'
+import {Container} from 'react-bootstrap'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      Sumi
-      </header>
-    </div>
+    <>
+    <Container>
+      <Header/>
+    </Container>
+    <HomeScreen/>
+    <Container>
+      <Footer/>
+    </Container>
+    </>
   );
 }
 
